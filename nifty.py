@@ -7,7 +7,7 @@ import os
 import boto3
 
 # === AWS S3 Setup ===
-s3_bucket = "nifty-option-chain-data"  # your bucket name
+s3_bucket = "aimldepartment"  # your bucket name
 s3 = boto3.client('s3')
 
 #=== Setup ===
@@ -20,7 +20,7 @@ dhan = dhanhq(dhan_context)
 under_security_id = 13                # NIFTY
 exchange_segment = "IDX_I"           # Index Segment
 expiry = "2025-08-14"                # Your target expiry
-csv_file = "AIML/Data_fetch/nifty_option_chain_13-08-2025.csv"
+csv_file = "nifty_option_chain_13-08-2025.csv"
 
 print("🚀 Starting Live Option Chain Logger... Press Ctrl+C to stop")
 
