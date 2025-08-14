@@ -13,7 +13,7 @@ s3_key = "nifty_option_chain_13-08-2025.csv"  # File name in S3
 
 # === Dhan Setup ===
 client_id = "1107726523"
-access_token = "YOUR_ACCESS_TOKEN"  # Replace with your valid DhanHQ access token
+access_token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkaGFuIiwicGFydG5lcklkIjoiIiwiZXhwIjoxNzU3NzQwNzU0LCJ0b2tlbkNvbnN1bWVyVHlwZSI6IlNFTEYiLCJ3ZWJob29rVXJsIjoiIiwiZGhhbkNsaWVudElkIjoiMTEwNzcyNjUyMyJ9.ApmXPGKbmcOBB5GiYdxy2_Npe9hnZYeu64uFVqZe-cCiJ56gE3BPi852ZG8urfsOvOUSZr0Ekb2yPdrMFYzg_w"  # Replace with your valid DhanHQ access token
 
 dhan_context = DhanContext(client_id, access_token)
 dhan = dhanhq(dhan_context)
@@ -110,3 +110,4 @@ while True:
         print(f"❌ Unexpected error: {e}")
 
     time.sleep(60)  # Wait for 1 minute
+
